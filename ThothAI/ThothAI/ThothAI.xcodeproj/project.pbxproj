@@ -6,7 +6,292 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		270533452EFC74290035915A /* dbrx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532BA2EFC74290035915A /* dbrx.cpp */; };
+		270533462EFC74290035915A /* llama-kv-cache-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705332A2EFC74290035915A /* llama-kv-cache-iswa.cpp */; };
+		270533472EFC74290035915A /* olmo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E82EFC74290035915A /* olmo.cpp */; };
+		270533482EFC74290035915A /* openai-moe-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532EB2EFC74290035915A /* openai-moe-iswa.cpp */; };
+		270533492EFC74290035915A /* t5-enc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705330B2EFC74290035915A /* t5-enc.cpp */; };
+		2705334A2EFC74290035915A /* neo-bert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E72EFC74290035915A /* neo-bert.cpp */; };
+		2705334B2EFC74290035915A /* xverse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705330D2EFC74290035915A /* xverse.cpp */; };
+		2705334C2EFC74290035915A /* starcoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533082EFC74290035915A /* starcoder.cpp */; };
+		2705334D2EFC74290035915A /* llama-io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533262EFC74290035915A /* llama-io.cpp */; };
+		2705334E2EFC74290035915A /* stablelm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533072EFC74290035915A /* stablelm.cpp */; };
+		2705334F2EFC74290035915A /* llama-quant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705333B2EFC74290035915A /* llama-quant.cpp */; };
+		270533502EFC74290035915A /* graph-context-mamba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D12EFC74290035915A /* graph-context-mamba.cpp */; };
+		270533512EFC74290035915A /* afmoe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532A92EFC74290035915A /* afmoe.cpp */; };
+		270533522EFC74290035915A /* glm4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532CB2EFC74290035915A /* glm4.cpp */; };
+		270533532EFC74290035915A /* granite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532CF2EFC74290035915A /* granite.cpp */; };
+		270533542EFC74290035915A /* rwkv7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533022EFC74290035915A /* rwkv7.cpp */; };
+		270533552EFC74290035915A /* arctic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532AC2EFC74290035915A /* arctic.cpp */; };
+		270533562EFC74290035915A /* qwen2moe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F62EFC74290035915A /* qwen2moe.cpp */; };
+		270533572EFC74290035915A /* qwen3next.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532FA2EFC74290035915A /* qwen3next.cpp */; };
+		270533582EFC74290035915A /* bloom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B32EFC74290035915A /* bloom.cpp */; };
+		270533592EFC74290035915A /* bitnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B22EFC74290035915A /* bitnet.cpp */; };
+		2705335A2EFC74290035915A /* grovemoe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D32EFC74290035915A /* grovemoe.cpp */; };
+		2705335B2EFC74290035915A /* llama-model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533352EFC74290035915A /* llama-model.cpp */; };
+		2705335C2EFC74290035915A /* dream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532BF2EFC74290035915A /* dream.cpp */; };
+		2705335D2EFC74290035915A /* bailingmoe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532AF2EFC74290035915A /* bailingmoe.cpp */; };
+		2705335E2EFC74290035915A /* llama-hparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533222EFC74290035915A /* llama-hparams.cpp */; };
+		2705335F2EFC74290035915A /* qwen3moe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F92EFC74290035915A /* qwen3moe.cpp */; };
+		270533602EFC74290035915A /* plamo2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F22EFC74290035915A /* plamo2.cpp */; };
+		270533612EFC74290035915A /* mamba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532DE2EFC74290035915A /* mamba.cpp */; };
+		270533622EFC74290035915A /* llada-moe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532DB2EFC74290035915A /* llada-moe.cpp */; };
+		270533632EFC74290035915A /* hunyuan-dense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D42EFC74290035915A /* hunyuan-dense.cpp */; };
+		270533642EFC74290035915A /* exaone4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C32EFC74290035915A /* exaone4.cpp */; };
+		270533652EFC74290035915A /* bert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B12EFC74290035915A /* bert.cpp */; };
+		270533662EFC74290035915A /* orion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532ED2EFC74290035915A /* orion.cpp */; };
+		270533672EFC74290035915A /* arwkv7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532AD2EFC74290035915A /* arwkv7.cpp */; };
+		270533682EFC74290035915A /* unicode-data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533432EFC74290035915A /* unicode-data.cpp */; };
+		270533692EFC74290035915A /* rnd1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532FE2EFC74290035915A /* rnd1.cpp */; };
+		2705336A2EFC74290035915A /* internlm2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D62EFC74290035915A /* internlm2.cpp */; };
+		2705336B2EFC74290035915A /* llama-model-loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533372EFC74290035915A /* llama-model-loader.cpp */; };
+		2705336C2EFC74290035915A /* llama-grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705331E2EFC74290035915A /* llama-grammar.cpp */; };
+		2705336D2EFC74290035915A /* llama-vocab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705333F2EFC74290035915A /* llama-vocab.cpp */; };
+		2705336E2EFC74290035915A /* llama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532DC2EFC74290035915A /* llama.cpp */; };
+		2705336F2EFC74290035915A /* granite-hybrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D02EFC74290035915A /* granite-hybrid.cpp */; };
+		270533702EFC74290035915A /* deci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532BB2EFC74290035915A /* deci.cpp */; };
+		270533712EFC74290035915A /* llama-memory-recurrent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533312EFC74290035915A /* llama-memory-recurrent.cpp */; };
+		270533722EFC74290035915A /* llama-kv-cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533282EFC74290035915A /* llama-kv-cache.cpp */; };
+		270533732EFC74290035915A /* qwen3vl-moe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532FC2EFC74290035915A /* qwen3vl-moe.cpp */; };
+		270533742EFC74290035915A /* command-r.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B92EFC74290035915A /* command-r.cpp */; };
+		270533752EFC74290035915A /* mpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E42EFC74290035915A /* mpt.cpp */; };
+		270533762EFC74290035915A /* llama-chat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533182EFC74290035915A /* llama-chat.cpp */; };
+		270533772EFC74290035915A /* llama-mmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533332EFC74290035915A /* llama-mmap.cpp */; };
+		270533782EFC74290035915A /* baichuan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532AE2EFC74290035915A /* baichuan.cpp */; };
+		270533792EFC74290035915A /* gemma3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C92EFC74290035915A /* gemma3.cpp */; };
+		2705337A2EFC74290035915A /* lfm2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D92EFC74290035915A /* lfm2.cpp */; };
+		2705337B2EFC74290035915A /* exaone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C22EFC74290035915A /* exaone.cpp */; };
+		2705337C2EFC74290035915A /* ernie4-5-moe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C12EFC74290035915A /* ernie4-5-moe.cpp */; };
+		2705337D2EFC74290035915A /* nemotron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E52EFC74290035915A /* nemotron.cpp */; };
+		2705337E2EFC74290035915A /* mistral3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E12EFC74290035915A /* mistral3.cpp */; };
+		2705337F2EFC74290035915A /* gemma-embedding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C72EFC74290035915A /* gemma-embedding.cpp */; };
+		270533802EFC74290035915A /* smollm3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533062EFC74290035915A /* smollm3.cpp */; };
+		270533812EFC74290035915A /* plamo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F12EFC74290035915A /* plamo.cpp */; };
+		270533822EFC74290035915A /* glm4-moe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532CC2EFC74290035915A /* glm4-moe.cpp */; };
+		270533832EFC74290035915A /* jamba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D82EFC74290035915A /* jamba.cpp */; };
+		270533842EFC74290035915A /* gemma3n-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532CA2EFC74290035915A /* gemma3n-iswa.cpp */; };
+		270533852EFC74290035915A /* qwen2vl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F72EFC74290035915A /* qwen2vl.cpp */; };
+		270533862EFC74290035915A /* minimax-m2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E02EFC74290035915A /* minimax-m2.cpp */; };
+		270533872EFC74290035915A /* rwkv6qwen2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533012EFC74290035915A /* rwkv6qwen2.cpp */; };
+		270533882EFC74290035915A /* cogvlm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B72EFC74290035915A /* cogvlm.cpp */; };
+		270533892EFC74290035915A /* qwen2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F52EFC74290035915A /* qwen2.cpp */; };
+		2705338A2EFC74290035915A /* unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533412EFC74290035915A /* unicode.cpp */; };
+		2705338B2EFC74290035915A /* openelm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532EC2EFC74290035915A /* openelm.cpp */; };
+		2705338C2EFC74290035915A /* arcee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532AB2EFC74290035915A /* arcee.cpp */; };
+		2705338D2EFC74290035915A /* dots1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532BE2EFC74290035915A /* dots1.cpp */; };
+		2705338E2EFC74290035915A /* apertus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532AA2EFC74290035915A /* apertus.cpp */; };
+		2705338F2EFC74290035915A /* llama-memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705332D2EFC74290035915A /* llama-memory.cpp */; };
+		270533902EFC74290035915A /* llama-sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705333D2EFC74290035915A /* llama-sampling.cpp */; };
+		270533912EFC74290035915A /* qwen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F42EFC74290035915A /* qwen.cpp */; };
+		270533922EFC74290035915A /* llama-adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533122EFC74290035915A /* llama-adapter.cpp */; };
+		270533932EFC74290035915A /* bailingmoe2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B02EFC74290035915A /* bailingmoe2.cpp */; };
+		270533942EFC74290035915A /* llama-graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533202EFC74290035915A /* llama-graph.cpp */; };
+		270533952EFC74290035915A /* olmoe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532EA2EFC74290035915A /* olmoe.cpp */; };
+		270533962EFC74290035915A /* codeshell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B62EFC74290035915A /* codeshell.cpp */; };
+		270533972EFC74290035915A /* llama-memory-hybrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705332F2EFC74290035915A /* llama-memory-hybrid.cpp */; };
+		270533982EFC74290035915A /* phi3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F02EFC74290035915A /* phi3.cpp */; };
+		270533992EFC74290035915A /* llama-cparams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705331C2EFC74290035915A /* llama-cparams.cpp */; };
+		2705339A2EFC74290035915A /* cohere2-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B82EFC74290035915A /* cohere2-iswa.cpp */; };
+		2705339B2EFC74290035915A /* deepseek2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532BD2EFC74290035915A /* deepseek2.cpp */; };
+		2705339C2EFC74290035915A /* falcon-h1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C52EFC74290035915A /* falcon-h1.cpp */; };
+		2705339D2EFC74290035915A /* chatglm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B52EFC74290035915A /* chatglm.cpp */; };
+		2705339E2EFC74290035915A /* falcon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C42EFC74290035915A /* falcon.cpp */; };
+		2705339F2EFC74290035915A /* phi2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532EF2EFC74290035915A /* phi2.cpp */; };
+		270533A02EFC74290035915A /* wavtokenizer-dec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705330C2EFC74290035915A /* wavtokenizer-dec.cpp */; };
+		270533A12EFC74290035915A /* llama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533102EFC74290035915A /* llama.cpp */; };
+		270533A22EFC74290035915A /* gpt2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532CD2EFC74290035915A /* gpt2.cpp */; };
+		270533A32EFC74290035915A /* seed-oss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533042EFC74290035915A /* seed-oss.cpp */; };
+		270533A42EFC74290035915A /* grok.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D22EFC74290035915A /* grok.cpp */; };
+		270533A52EFC74290035915A /* llama-model-saver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533392EFC74290035915A /* llama-model-saver.cpp */; };
+		270533A62EFC74290035915A /* rwkv6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532FF2EFC74290035915A /* rwkv6.cpp */; };
+		270533A72EFC74290035915A /* qwen3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F82EFC74290035915A /* qwen3.cpp */; };
+		270533A82EFC74290035915A /* pangu-embedded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532EE2EFC74290035915A /* pangu-embedded.cpp */; };
+		270533A92EFC74290035915A /* smallthinker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533052EFC74290035915A /* smallthinker.cpp */; };
+		270533AA2EFC74290035915A /* gptneox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532CE2EFC74290035915A /* gptneox.cpp */; };
+		270533AB2EFC74290035915A /* refact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532FD2EFC74290035915A /* refact.cpp */; };
+		270533AC2EFC74290035915A /* gemma2-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C82EFC74290035915A /* gemma2-iswa.cpp */; };
+		270533AD2EFC74290035915A /* deepseek.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532BC2EFC74290035915A /* deepseek.cpp */; };
+		270533AE2EFC74290035915A /* llama-context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705331A2EFC74290035915A /* llama-context.cpp */; };
+		270533AF2EFC74290035915A /* llada.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532DA2EFC74290035915A /* llada.cpp */; };
+		270533B02EFC74290035915A /* hunyuan-moe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D52EFC74290035915A /* hunyuan-moe.cpp */; };
+		270533B12EFC74290035915A /* modern-bert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E32EFC74290035915A /* modern-bert.cpp */; };
+		270533B22EFC74290035915A /* nemotron-h.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E62EFC74290035915A /* nemotron-h.cpp */; };
+		270533B32EFC74290035915A /* t5-dec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705330A2EFC74290035915A /* t5-dec.cpp */; };
+		270533B42EFC74290035915A /* minicpm3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532DF2EFC74290035915A /* minicpm3.cpp */; };
+		270533B52EFC74290035915A /* gemma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C62EFC74290035915A /* gemma.cpp */; };
+		270533B62EFC74290035915A /* llama-arch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533142EFC74290035915A /* llama-arch.cpp */; };
+		270533B72EFC74290035915A /* starcoder2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533092EFC74290035915A /* starcoder2.cpp */; };
+		270533B82EFC74290035915A /* jais.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532D72EFC74290035915A /* jais.cpp */; };
+		270533B92EFC74290035915A /* llama-impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533242EFC74290035915A /* llama-impl.cpp */; };
+		270533BA2EFC74290035915A /* chameleon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532B42EFC74290035915A /* chameleon.cpp */; };
+		270533BB2EFC74290035915A /* llama-batch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533162EFC74290035915A /* llama-batch.cpp */; };
+		270533BC2EFC74290035915A /* olmo2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532E92EFC74290035915A /* olmo2.cpp */; };
+		270533BD2EFC74290035915A /* llama-iswa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532DD2EFC74290035915A /* llama-iswa.cpp */; };
+		270533BE2EFC74290035915A /* rwkv7-base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533032EFC74290035915A /* rwkv7-base.cpp */; };
+		270533BF2EFC74290035915A /* plm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532F32EFC74290035915A /* plm.cpp */; };
+		270533C02EFC74290035915A /* rwkv6-base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270533002EFC74290035915A /* rwkv6-base.cpp */; };
+		270533C12EFC74290035915A /* qwen3vl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532FB2EFC74290035915A /* qwen3vl.cpp */; };
+		270533C22EFC74290035915A /* ernie4-5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 270532C02EFC74290035915A /* ernie4-5.cpp */; };
+		270533C32EFC74290035915A /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2705330F2EFC74290035915A /* CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		270523D82EFC72AB0035915A /* llama.swiftui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = llama.swiftui.xcodeproj; sourceTree = "<group>"; };
+		270532A92EFC74290035915A /* afmoe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = afmoe.cpp; sourceTree = "<group>"; };
+		270532AA2EFC74290035915A /* apertus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = apertus.cpp; sourceTree = "<group>"; };
+		270532AB2EFC74290035915A /* arcee.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arcee.cpp; sourceTree = "<group>"; };
+		270532AC2EFC74290035915A /* arctic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arctic.cpp; sourceTree = "<group>"; };
+		270532AD2EFC74290035915A /* arwkv7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = arwkv7.cpp; sourceTree = "<group>"; };
+		270532AE2EFC74290035915A /* baichuan.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = baichuan.cpp; sourceTree = "<group>"; };
+		270532AF2EFC74290035915A /* bailingmoe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bailingmoe.cpp; sourceTree = "<group>"; };
+		270532B02EFC74290035915A /* bailingmoe2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bailingmoe2.cpp; sourceTree = "<group>"; };
+		270532B12EFC74290035915A /* bert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bert.cpp; sourceTree = "<group>"; };
+		270532B22EFC74290035915A /* bitnet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bitnet.cpp; sourceTree = "<group>"; };
+		270532B32EFC74290035915A /* bloom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bloom.cpp; sourceTree = "<group>"; };
+		270532B42EFC74290035915A /* chameleon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chameleon.cpp; sourceTree = "<group>"; };
+		270532B52EFC74290035915A /* chatglm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chatglm.cpp; sourceTree = "<group>"; };
+		270532B62EFC74290035915A /* codeshell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codeshell.cpp; sourceTree = "<group>"; };
+		270532B72EFC74290035915A /* cogvlm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cogvlm.cpp; sourceTree = "<group>"; };
+		270532B82EFC74290035915A /* cohere2-iswa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "cohere2-iswa.cpp"; sourceTree = "<group>"; };
+		270532B92EFC74290035915A /* command-r.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "command-r.cpp"; sourceTree = "<group>"; };
+		270532BA2EFC74290035915A /* dbrx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dbrx.cpp; sourceTree = "<group>"; };
+		270532BB2EFC74290035915A /* deci.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deci.cpp; sourceTree = "<group>"; };
+		270532BC2EFC74290035915A /* deepseek.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deepseek.cpp; sourceTree = "<group>"; };
+		270532BD2EFC74290035915A /* deepseek2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deepseek2.cpp; sourceTree = "<group>"; };
+		270532BE2EFC74290035915A /* dots1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dots1.cpp; sourceTree = "<group>"; };
+		270532BF2EFC74290035915A /* dream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dream.cpp; sourceTree = "<group>"; };
+		270532C02EFC74290035915A /* ernie4-5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ernie4-5.cpp"; sourceTree = "<group>"; };
+		270532C12EFC74290035915A /* ernie4-5-moe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "ernie4-5-moe.cpp"; sourceTree = "<group>"; };
+		270532C22EFC74290035915A /* exaone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = exaone.cpp; sourceTree = "<group>"; };
+		270532C32EFC74290035915A /* exaone4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = exaone4.cpp; sourceTree = "<group>"; };
+		270532C42EFC74290035915A /* falcon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = falcon.cpp; sourceTree = "<group>"; };
+		270532C52EFC74290035915A /* falcon-h1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "falcon-h1.cpp"; sourceTree = "<group>"; };
+		270532C62EFC74290035915A /* gemma.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gemma.cpp; sourceTree = "<group>"; };
+		270532C72EFC74290035915A /* gemma-embedding.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gemma-embedding.cpp"; sourceTree = "<group>"; };
+		270532C82EFC74290035915A /* gemma2-iswa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gemma2-iswa.cpp"; sourceTree = "<group>"; };
+		270532C92EFC74290035915A /* gemma3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gemma3.cpp; sourceTree = "<group>"; };
+		270532CA2EFC74290035915A /* gemma3n-iswa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "gemma3n-iswa.cpp"; sourceTree = "<group>"; };
+		270532CB2EFC74290035915A /* glm4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = glm4.cpp; sourceTree = "<group>"; };
+		270532CC2EFC74290035915A /* glm4-moe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "glm4-moe.cpp"; sourceTree = "<group>"; };
+		270532CD2EFC74290035915A /* gpt2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gpt2.cpp; sourceTree = "<group>"; };
+		270532CE2EFC74290035915A /* gptneox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gptneox.cpp; sourceTree = "<group>"; };
+		270532CF2EFC74290035915A /* granite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = granite.cpp; sourceTree = "<group>"; };
+		270532D02EFC74290035915A /* granite-hybrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "granite-hybrid.cpp"; sourceTree = "<group>"; };
+		270532D12EFC74290035915A /* graph-context-mamba.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "graph-context-mamba.cpp"; sourceTree = "<group>"; };
+		270532D22EFC74290035915A /* grok.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = grok.cpp; sourceTree = "<group>"; };
+		270532D32EFC74290035915A /* grovemoe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = grovemoe.cpp; sourceTree = "<group>"; };
+		270532D42EFC74290035915A /* hunyuan-dense.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "hunyuan-dense.cpp"; sourceTree = "<group>"; };
+		270532D52EFC74290035915A /* hunyuan-moe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "hunyuan-moe.cpp"; sourceTree = "<group>"; };
+		270532D62EFC74290035915A /* internlm2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = internlm2.cpp; sourceTree = "<group>"; };
+		270532D72EFC74290035915A /* jais.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jais.cpp; sourceTree = "<group>"; };
+		270532D82EFC74290035915A /* jamba.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jamba.cpp; sourceTree = "<group>"; };
+		270532D92EFC74290035915A /* lfm2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lfm2.cpp; sourceTree = "<group>"; };
+		270532DA2EFC74290035915A /* llada.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = llada.cpp; sourceTree = "<group>"; };
+		270532DB2EFC74290035915A /* llada-moe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llada-moe.cpp"; sourceTree = "<group>"; };
+		270532DC2EFC74290035915A /* llama.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = llama.cpp; sourceTree = "<group>"; };
+		270532DD2EFC74290035915A /* llama-iswa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-iswa.cpp"; sourceTree = "<group>"; };
+		270532DE2EFC74290035915A /* mamba.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mamba.cpp; sourceTree = "<group>"; };
+		270532DF2EFC74290035915A /* minicpm3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = minicpm3.cpp; sourceTree = "<group>"; };
+		270532E02EFC74290035915A /* minimax-m2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "minimax-m2.cpp"; sourceTree = "<group>"; };
+		270532E12EFC74290035915A /* mistral3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mistral3.cpp; sourceTree = "<group>"; };
+		270532E22EFC74290035915A /* models.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = models.h; sourceTree = "<group>"; };
+		270532E32EFC74290035915A /* modern-bert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "modern-bert.cpp"; sourceTree = "<group>"; };
+		270532E42EFC74290035915A /* mpt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mpt.cpp; sourceTree = "<group>"; };
+		270532E52EFC74290035915A /* nemotron.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nemotron.cpp; sourceTree = "<group>"; };
+		270532E62EFC74290035915A /* nemotron-h.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "nemotron-h.cpp"; sourceTree = "<group>"; };
+		270532E72EFC74290035915A /* neo-bert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "neo-bert.cpp"; sourceTree = "<group>"; };
+		270532E82EFC74290035915A /* olmo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = olmo.cpp; sourceTree = "<group>"; };
+		270532E92EFC74290035915A /* olmo2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = olmo2.cpp; sourceTree = "<group>"; };
+		270532EA2EFC74290035915A /* olmoe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = olmoe.cpp; sourceTree = "<group>"; };
+		270532EB2EFC74290035915A /* openai-moe-iswa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "openai-moe-iswa.cpp"; sourceTree = "<group>"; };
+		270532EC2EFC74290035915A /* openelm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = openelm.cpp; sourceTree = "<group>"; };
+		270532ED2EFC74290035915A /* orion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = orion.cpp; sourceTree = "<group>"; };
+		270532EE2EFC74290035915A /* pangu-embedded.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "pangu-embedded.cpp"; sourceTree = "<group>"; };
+		270532EF2EFC74290035915A /* phi2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = phi2.cpp; sourceTree = "<group>"; };
+		270532F02EFC74290035915A /* phi3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = phi3.cpp; sourceTree = "<group>"; };
+		270532F12EFC74290035915A /* plamo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plamo.cpp; sourceTree = "<group>"; };
+		270532F22EFC74290035915A /* plamo2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plamo2.cpp; sourceTree = "<group>"; };
+		270532F32EFC74290035915A /* plm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plm.cpp; sourceTree = "<group>"; };
+		270532F42EFC74290035915A /* qwen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen.cpp; sourceTree = "<group>"; };
+		270532F52EFC74290035915A /* qwen2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen2.cpp; sourceTree = "<group>"; };
+		270532F62EFC74290035915A /* qwen2moe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen2moe.cpp; sourceTree = "<group>"; };
+		270532F72EFC74290035915A /* qwen2vl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen2vl.cpp; sourceTree = "<group>"; };
+		270532F82EFC74290035915A /* qwen3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen3.cpp; sourceTree = "<group>"; };
+		270532F92EFC74290035915A /* qwen3moe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen3moe.cpp; sourceTree = "<group>"; };
+		270532FA2EFC74290035915A /* qwen3next.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen3next.cpp; sourceTree = "<group>"; };
+		270532FB2EFC74290035915A /* qwen3vl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qwen3vl.cpp; sourceTree = "<group>"; };
+		270532FC2EFC74290035915A /* qwen3vl-moe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "qwen3vl-moe.cpp"; sourceTree = "<group>"; };
+		270532FD2EFC74290035915A /* refact.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = refact.cpp; sourceTree = "<group>"; };
+		270532FE2EFC74290035915A /* rnd1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rnd1.cpp; sourceTree = "<group>"; };
+		270532FF2EFC74290035915A /* rwkv6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rwkv6.cpp; sourceTree = "<group>"; };
+		270533002EFC74290035915A /* rwkv6-base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "rwkv6-base.cpp"; sourceTree = "<group>"; };
+		270533012EFC74290035915A /* rwkv6qwen2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rwkv6qwen2.cpp; sourceTree = "<group>"; };
+		270533022EFC74290035915A /* rwkv7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rwkv7.cpp; sourceTree = "<group>"; };
+		270533032EFC74290035915A /* rwkv7-base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "rwkv7-base.cpp"; sourceTree = "<group>"; };
+		270533042EFC74290035915A /* seed-oss.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "seed-oss.cpp"; sourceTree = "<group>"; };
+		270533052EFC74290035915A /* smallthinker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = smallthinker.cpp; sourceTree = "<group>"; };
+		270533062EFC74290035915A /* smollm3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = smollm3.cpp; sourceTree = "<group>"; };
+		270533072EFC74290035915A /* stablelm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stablelm.cpp; sourceTree = "<group>"; };
+		270533082EFC74290035915A /* starcoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = starcoder.cpp; sourceTree = "<group>"; };
+		270533092EFC74290035915A /* starcoder2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = starcoder2.cpp; sourceTree = "<group>"; };
+		2705330A2EFC74290035915A /* t5-dec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "t5-dec.cpp"; sourceTree = "<group>"; };
+		2705330B2EFC74290035915A /* t5-enc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "t5-enc.cpp"; sourceTree = "<group>"; };
+		2705330C2EFC74290035915A /* wavtokenizer-dec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "wavtokenizer-dec.cpp"; sourceTree = "<group>"; };
+		2705330D2EFC74290035915A /* xverse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xverse.cpp; sourceTree = "<group>"; };
+		2705330F2EFC74290035915A /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		270533102EFC74290035915A /* llama.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = llama.cpp; sourceTree = "<group>"; };
+		270533112EFC74290035915A /* llama-adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-adapter.h"; sourceTree = "<group>"; };
+		270533122EFC74290035915A /* llama-adapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-adapter.cpp"; sourceTree = "<group>"; };
+		270533132EFC74290035915A /* llama-arch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-arch.h"; sourceTree = "<group>"; };
+		270533142EFC74290035915A /* llama-arch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-arch.cpp"; sourceTree = "<group>"; };
+		270533152EFC74290035915A /* llama-batch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-batch.h"; sourceTree = "<group>"; };
+		270533162EFC74290035915A /* llama-batch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-batch.cpp"; sourceTree = "<group>"; };
+		270533172EFC74290035915A /* llama-chat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-chat.h"; sourceTree = "<group>"; };
+		270533182EFC74290035915A /* llama-chat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-chat.cpp"; sourceTree = "<group>"; };
+		270533192EFC74290035915A /* llama-context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-context.h"; sourceTree = "<group>"; };
+		2705331A2EFC74290035915A /* llama-context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-context.cpp"; sourceTree = "<group>"; };
+		2705331B2EFC74290035915A /* llama-cparams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-cparams.h"; sourceTree = "<group>"; };
+		2705331C2EFC74290035915A /* llama-cparams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-cparams.cpp"; sourceTree = "<group>"; };
+		2705331D2EFC74290035915A /* llama-grammar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-grammar.h"; sourceTree = "<group>"; };
+		2705331E2EFC74290035915A /* llama-grammar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-grammar.cpp"; sourceTree = "<group>"; };
+		2705331F2EFC74290035915A /* llama-graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-graph.h"; sourceTree = "<group>"; };
+		270533202EFC74290035915A /* llama-graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-graph.cpp"; sourceTree = "<group>"; };
+		270533212EFC74290035915A /* llama-hparams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-hparams.h"; sourceTree = "<group>"; };
+		270533222EFC74290035915A /* llama-hparams.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-hparams.cpp"; sourceTree = "<group>"; };
+		270533232EFC74290035915A /* llama-impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-impl.h"; sourceTree = "<group>"; };
+		270533242EFC74290035915A /* llama-impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-impl.cpp"; sourceTree = "<group>"; };
+		270533252EFC74290035915A /* llama-io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-io.h"; sourceTree = "<group>"; };
+		270533262EFC74290035915A /* llama-io.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-io.cpp"; sourceTree = "<group>"; };
+		270533272EFC74290035915A /* llama-kv-cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-kv-cache.h"; sourceTree = "<group>"; };
+		270533282EFC74290035915A /* llama-kv-cache.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-kv-cache.cpp"; sourceTree = "<group>"; };
+		270533292EFC74290035915A /* llama-kv-cache-iswa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-kv-cache-iswa.h"; sourceTree = "<group>"; };
+		2705332A2EFC74290035915A /* llama-kv-cache-iswa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-kv-cache-iswa.cpp"; sourceTree = "<group>"; };
+		2705332B2EFC74290035915A /* llama-kv-cells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-kv-cells.h"; sourceTree = "<group>"; };
+		2705332C2EFC74290035915A /* llama-memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-memory.h"; sourceTree = "<group>"; };
+		2705332D2EFC74290035915A /* llama-memory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-memory.cpp"; sourceTree = "<group>"; };
+		2705332E2EFC74290035915A /* llama-memory-hybrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-memory-hybrid.h"; sourceTree = "<group>"; };
+		2705332F2EFC74290035915A /* llama-memory-hybrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-memory-hybrid.cpp"; sourceTree = "<group>"; };
+		270533302EFC74290035915A /* llama-memory-recurrent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-memory-recurrent.h"; sourceTree = "<group>"; };
+		270533312EFC74290035915A /* llama-memory-recurrent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-memory-recurrent.cpp"; sourceTree = "<group>"; };
+		270533322EFC74290035915A /* llama-mmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-mmap.h"; sourceTree = "<group>"; };
+		270533332EFC74290035915A /* llama-mmap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-mmap.cpp"; sourceTree = "<group>"; };
+		270533342EFC74290035915A /* llama-model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-model.h"; sourceTree = "<group>"; };
+		270533352EFC74290035915A /* llama-model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-model.cpp"; sourceTree = "<group>"; };
+		270533362EFC74290035915A /* llama-model-loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-model-loader.h"; sourceTree = "<group>"; };
+		270533372EFC74290035915A /* llama-model-loader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-model-loader.cpp"; sourceTree = "<group>"; };
+		270533382EFC74290035915A /* llama-model-saver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-model-saver.h"; sourceTree = "<group>"; };
+		270533392EFC74290035915A /* llama-model-saver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-model-saver.cpp"; sourceTree = "<group>"; };
+		2705333A2EFC74290035915A /* llama-quant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-quant.h"; sourceTree = "<group>"; };
+		2705333B2EFC74290035915A /* llama-quant.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-quant.cpp"; sourceTree = "<group>"; };
+		2705333C2EFC74290035915A /* llama-sampling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-sampling.h"; sourceTree = "<group>"; };
+		2705333D2EFC74290035915A /* llama-sampling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-sampling.cpp"; sourceTree = "<group>"; };
+		2705333E2EFC74290035915A /* llama-vocab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llama-vocab.h"; sourceTree = "<group>"; };
+		2705333F2EFC74290035915A /* llama-vocab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "llama-vocab.cpp"; sourceTree = "<group>"; };
+		270533402EFC74290035915A /* unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unicode.h; sourceTree = "<group>"; };
+		270533412EFC74290035915A /* unicode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unicode.cpp; sourceTree = "<group>"; };
+		270533422EFC74290035915A /* unicode-data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "unicode-data.h"; sourceTree = "<group>"; };
+		270533432EFC74290035915A /* unicode-data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "unicode-data.cpp"; sourceTree = "<group>"; };
 		2705F31D2EFB9E670035915A /* ThothAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThothAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -29,9 +314,186 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27052BB02EFC72AB0035915A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2705330E2EFC74290035915A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				270532A92EFC74290035915A /* afmoe.cpp */,
+				270532AA2EFC74290035915A /* apertus.cpp */,
+				270532AB2EFC74290035915A /* arcee.cpp */,
+				270532AC2EFC74290035915A /* arctic.cpp */,
+				270532AD2EFC74290035915A /* arwkv7.cpp */,
+				270532AE2EFC74290035915A /* baichuan.cpp */,
+				270532AF2EFC74290035915A /* bailingmoe.cpp */,
+				270532B02EFC74290035915A /* bailingmoe2.cpp */,
+				270532B12EFC74290035915A /* bert.cpp */,
+				270532B22EFC74290035915A /* bitnet.cpp */,
+				270532B32EFC74290035915A /* bloom.cpp */,
+				270532B42EFC74290035915A /* chameleon.cpp */,
+				270532B52EFC74290035915A /* chatglm.cpp */,
+				270532B62EFC74290035915A /* codeshell.cpp */,
+				270532B72EFC74290035915A /* cogvlm.cpp */,
+				270532B82EFC74290035915A /* cohere2-iswa.cpp */,
+				270532B92EFC74290035915A /* command-r.cpp */,
+				270532BA2EFC74290035915A /* dbrx.cpp */,
+				270532BB2EFC74290035915A /* deci.cpp */,
+				270532BC2EFC74290035915A /* deepseek.cpp */,
+				270532BD2EFC74290035915A /* deepseek2.cpp */,
+				270532BE2EFC74290035915A /* dots1.cpp */,
+				270532BF2EFC74290035915A /* dream.cpp */,
+				270532C02EFC74290035915A /* ernie4-5.cpp */,
+				270532C12EFC74290035915A /* ernie4-5-moe.cpp */,
+				270532C22EFC74290035915A /* exaone.cpp */,
+				270532C32EFC74290035915A /* exaone4.cpp */,
+				270532C42EFC74290035915A /* falcon.cpp */,
+				270532C52EFC74290035915A /* falcon-h1.cpp */,
+				270532C62EFC74290035915A /* gemma.cpp */,
+				270532C72EFC74290035915A /* gemma-embedding.cpp */,
+				270532C82EFC74290035915A /* gemma2-iswa.cpp */,
+				270532C92EFC74290035915A /* gemma3.cpp */,
+				270532CA2EFC74290035915A /* gemma3n-iswa.cpp */,
+				270532CB2EFC74290035915A /* glm4.cpp */,
+				270532CC2EFC74290035915A /* glm4-moe.cpp */,
+				270532CD2EFC74290035915A /* gpt2.cpp */,
+				270532CE2EFC74290035915A /* gptneox.cpp */,
+				270532CF2EFC74290035915A /* granite.cpp */,
+				270532D02EFC74290035915A /* granite-hybrid.cpp */,
+				270532D12EFC74290035915A /* graph-context-mamba.cpp */,
+				270532D22EFC74290035915A /* grok.cpp */,
+				270532D32EFC74290035915A /* grovemoe.cpp */,
+				270532D42EFC74290035915A /* hunyuan-dense.cpp */,
+				270532D52EFC74290035915A /* hunyuan-moe.cpp */,
+				270532D62EFC74290035915A /* internlm2.cpp */,
+				270532D72EFC74290035915A /* jais.cpp */,
+				270532D82EFC74290035915A /* jamba.cpp */,
+				270532D92EFC74290035915A /* lfm2.cpp */,
+				270532DA2EFC74290035915A /* llada.cpp */,
+				270532DB2EFC74290035915A /* llada-moe.cpp */,
+				270532DC2EFC74290035915A /* llama.cpp */,
+				270532DD2EFC74290035915A /* llama-iswa.cpp */,
+				270532DE2EFC74290035915A /* mamba.cpp */,
+				270532DF2EFC74290035915A /* minicpm3.cpp */,
+				270532E02EFC74290035915A /* minimax-m2.cpp */,
+				270532E12EFC74290035915A /* mistral3.cpp */,
+				270532E22EFC74290035915A /* models.h */,
+				270532E32EFC74290035915A /* modern-bert.cpp */,
+				270532E42EFC74290035915A /* mpt.cpp */,
+				270532E52EFC74290035915A /* nemotron.cpp */,
+				270532E62EFC74290035915A /* nemotron-h.cpp */,
+				270532E72EFC74290035915A /* neo-bert.cpp */,
+				270532E82EFC74290035915A /* olmo.cpp */,
+				270532E92EFC74290035915A /* olmo2.cpp */,
+				270532EA2EFC74290035915A /* olmoe.cpp */,
+				270532EB2EFC74290035915A /* openai-moe-iswa.cpp */,
+				270532EC2EFC74290035915A /* openelm.cpp */,
+				270532ED2EFC74290035915A /* orion.cpp */,
+				270532EE2EFC74290035915A /* pangu-embedded.cpp */,
+				270532EF2EFC74290035915A /* phi2.cpp */,
+				270532F02EFC74290035915A /* phi3.cpp */,
+				270532F12EFC74290035915A /* plamo.cpp */,
+				270532F22EFC74290035915A /* plamo2.cpp */,
+				270532F32EFC74290035915A /* plm.cpp */,
+				270532F42EFC74290035915A /* qwen.cpp */,
+				270532F52EFC74290035915A /* qwen2.cpp */,
+				270532F62EFC74290035915A /* qwen2moe.cpp */,
+				270532F72EFC74290035915A /* qwen2vl.cpp */,
+				270532F82EFC74290035915A /* qwen3.cpp */,
+				270532F92EFC74290035915A /* qwen3moe.cpp */,
+				270532FA2EFC74290035915A /* qwen3next.cpp */,
+				270532FB2EFC74290035915A /* qwen3vl.cpp */,
+				270532FC2EFC74290035915A /* qwen3vl-moe.cpp */,
+				270532FD2EFC74290035915A /* refact.cpp */,
+				270532FE2EFC74290035915A /* rnd1.cpp */,
+				270532FF2EFC74290035915A /* rwkv6.cpp */,
+				270533002EFC74290035915A /* rwkv6-base.cpp */,
+				270533012EFC74290035915A /* rwkv6qwen2.cpp */,
+				270533022EFC74290035915A /* rwkv7.cpp */,
+				270533032EFC74290035915A /* rwkv7-base.cpp */,
+				270533042EFC74290035915A /* seed-oss.cpp */,
+				270533052EFC74290035915A /* smallthinker.cpp */,
+				270533062EFC74290035915A /* smollm3.cpp */,
+				270533072EFC74290035915A /* stablelm.cpp */,
+				270533082EFC74290035915A /* starcoder.cpp */,
+				270533092EFC74290035915A /* starcoder2.cpp */,
+				2705330A2EFC74290035915A /* t5-dec.cpp */,
+				2705330B2EFC74290035915A /* t5-enc.cpp */,
+				2705330C2EFC74290035915A /* wavtokenizer-dec.cpp */,
+				2705330D2EFC74290035915A /* xverse.cpp */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		270533442EFC74290035915A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2705330E2EFC74290035915A /* models */,
+				2705330F2EFC74290035915A /* CMakeLists.txt */,
+				270533102EFC74290035915A /* llama.cpp */,
+				270533112EFC74290035915A /* llama-adapter.h */,
+				270533122EFC74290035915A /* llama-adapter.cpp */,
+				270533132EFC74290035915A /* llama-arch.h */,
+				270533142EFC74290035915A /* llama-arch.cpp */,
+				270533152EFC74290035915A /* llama-batch.h */,
+				270533162EFC74290035915A /* llama-batch.cpp */,
+				270533172EFC74290035915A /* llama-chat.h */,
+				270533182EFC74290035915A /* llama-chat.cpp */,
+				270533192EFC74290035915A /* llama-context.h */,
+				2705331A2EFC74290035915A /* llama-context.cpp */,
+				2705331B2EFC74290035915A /* llama-cparams.h */,
+				2705331C2EFC74290035915A /* llama-cparams.cpp */,
+				2705331D2EFC74290035915A /* llama-grammar.h */,
+				2705331E2EFC74290035915A /* llama-grammar.cpp */,
+				2705331F2EFC74290035915A /* llama-graph.h */,
+				270533202EFC74290035915A /* llama-graph.cpp */,
+				270533212EFC74290035915A /* llama-hparams.h */,
+				270533222EFC74290035915A /* llama-hparams.cpp */,
+				270533232EFC74290035915A /* llama-impl.h */,
+				270533242EFC74290035915A /* llama-impl.cpp */,
+				270533252EFC74290035915A /* llama-io.h */,
+				270533262EFC74290035915A /* llama-io.cpp */,
+				270533272EFC74290035915A /* llama-kv-cache.h */,
+				270533282EFC74290035915A /* llama-kv-cache.cpp */,
+				270533292EFC74290035915A /* llama-kv-cache-iswa.h */,
+				2705332A2EFC74290035915A /* llama-kv-cache-iswa.cpp */,
+				2705332B2EFC74290035915A /* llama-kv-cells.h */,
+				2705332C2EFC74290035915A /* llama-memory.h */,
+				2705332D2EFC74290035915A /* llama-memory.cpp */,
+				2705332E2EFC74290035915A /* llama-memory-hybrid.h */,
+				2705332F2EFC74290035915A /* llama-memory-hybrid.cpp */,
+				270533302EFC74290035915A /* llama-memory-recurrent.h */,
+				270533312EFC74290035915A /* llama-memory-recurrent.cpp */,
+				270533322EFC74290035915A /* llama-mmap.h */,
+				270533332EFC74290035915A /* llama-mmap.cpp */,
+				270533342EFC74290035915A /* llama-model.h */,
+				270533352EFC74290035915A /* llama-model.cpp */,
+				270533362EFC74290035915A /* llama-model-loader.h */,
+				270533372EFC74290035915A /* llama-model-loader.cpp */,
+				270533382EFC74290035915A /* llama-model-saver.h */,
+				270533392EFC74290035915A /* llama-model-saver.cpp */,
+				2705333A2EFC74290035915A /* llama-quant.h */,
+				2705333B2EFC74290035915A /* llama-quant.cpp */,
+				2705333C2EFC74290035915A /* llama-sampling.h */,
+				2705333D2EFC74290035915A /* llama-sampling.cpp */,
+				2705333E2EFC74290035915A /* llama-vocab.h */,
+				2705333F2EFC74290035915A /* llama-vocab.cpp */,
+				270533402EFC74290035915A /* unicode.h */,
+				270533412EFC74290035915A /* unicode.cpp */,
+				270533422EFC74290035915A /* unicode-data.h */,
+				270533432EFC74290035915A /* unicode-data.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		2705F3142EFB9E670035915A = {
 			isa = PBXGroup;
 			children = (
+				270533442EFC74290035915A /* src */,
 				2705F31F2EFB9E670035915A /* ThothAI */,
 				2705F31E2EFB9E670035915A /* Products */,
 			);
@@ -97,6 +559,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2705F31E2EFB9E670035915A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27052BB02EFC72AB0035915A /* Products */;
+					ProjectRef = 270523D82EFC72AB0035915A /* llama.swiftui.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2705F31C2EFB9E670035915A /* ThothAI */,
@@ -109,6 +577,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270533C32EFC74290035915A /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +588,132 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270533452EFC74290035915A /* dbrx.cpp in Sources */,
+				270533462EFC74290035915A /* llama-kv-cache-iswa.cpp in Sources */,
+				270533472EFC74290035915A /* olmo.cpp in Sources */,
+				270533482EFC74290035915A /* openai-moe-iswa.cpp in Sources */,
+				270533492EFC74290035915A /* t5-enc.cpp in Sources */,
+				2705334A2EFC74290035915A /* neo-bert.cpp in Sources */,
+				2705334B2EFC74290035915A /* xverse.cpp in Sources */,
+				2705334C2EFC74290035915A /* starcoder.cpp in Sources */,
+				2705334D2EFC74290035915A /* llama-io.cpp in Sources */,
+				2705334E2EFC74290035915A /* stablelm.cpp in Sources */,
+				2705334F2EFC74290035915A /* llama-quant.cpp in Sources */,
+				270533502EFC74290035915A /* graph-context-mamba.cpp in Sources */,
+				270533512EFC74290035915A /* afmoe.cpp in Sources */,
+				270533522EFC74290035915A /* glm4.cpp in Sources */,
+				270533532EFC74290035915A /* granite.cpp in Sources */,
+				270533542EFC74290035915A /* rwkv7.cpp in Sources */,
+				270533552EFC74290035915A /* arctic.cpp in Sources */,
+				270533562EFC74290035915A /* qwen2moe.cpp in Sources */,
+				270533572EFC74290035915A /* qwen3next.cpp in Sources */,
+				270533582EFC74290035915A /* bloom.cpp in Sources */,
+				270533592EFC74290035915A /* bitnet.cpp in Sources */,
+				2705335A2EFC74290035915A /* grovemoe.cpp in Sources */,
+				2705335B2EFC74290035915A /* llama-model.cpp in Sources */,
+				2705335C2EFC74290035915A /* dream.cpp in Sources */,
+				2705335D2EFC74290035915A /* bailingmoe.cpp in Sources */,
+				2705335E2EFC74290035915A /* llama-hparams.cpp in Sources */,
+				2705335F2EFC74290035915A /* qwen3moe.cpp in Sources */,
+				270533602EFC74290035915A /* plamo2.cpp in Sources */,
+				270533612EFC74290035915A /* mamba.cpp in Sources */,
+				270533622EFC74290035915A /* llada-moe.cpp in Sources */,
+				270533632EFC74290035915A /* hunyuan-dense.cpp in Sources */,
+				270533642EFC74290035915A /* exaone4.cpp in Sources */,
+				270533652EFC74290035915A /* bert.cpp in Sources */,
+				270533662EFC74290035915A /* orion.cpp in Sources */,
+				270533672EFC74290035915A /* arwkv7.cpp in Sources */,
+				270533682EFC74290035915A /* unicode-data.cpp in Sources */,
+				270533692EFC74290035915A /* rnd1.cpp in Sources */,
+				2705336A2EFC74290035915A /* internlm2.cpp in Sources */,
+				2705336B2EFC74290035915A /* llama-model-loader.cpp in Sources */,
+				2705336C2EFC74290035915A /* llama-grammar.cpp in Sources */,
+				2705336D2EFC74290035915A /* llama-vocab.cpp in Sources */,
+				2705336E2EFC74290035915A /* llama.cpp in Sources */,
+				2705336F2EFC74290035915A /* granite-hybrid.cpp in Sources */,
+				270533702EFC74290035915A /* deci.cpp in Sources */,
+				270533712EFC74290035915A /* llama-memory-recurrent.cpp in Sources */,
+				270533722EFC74290035915A /* llama-kv-cache.cpp in Sources */,
+				270533732EFC74290035915A /* qwen3vl-moe.cpp in Sources */,
+				270533742EFC74290035915A /* command-r.cpp in Sources */,
+				270533752EFC74290035915A /* mpt.cpp in Sources */,
+				270533762EFC74290035915A /* llama-chat.cpp in Sources */,
+				270533772EFC74290035915A /* llama-mmap.cpp in Sources */,
+				270533782EFC74290035915A /* baichuan.cpp in Sources */,
+				270533792EFC74290035915A /* gemma3.cpp in Sources */,
+				2705337A2EFC74290035915A /* lfm2.cpp in Sources */,
+				2705337B2EFC74290035915A /* exaone.cpp in Sources */,
+				2705337C2EFC74290035915A /* ernie4-5-moe.cpp in Sources */,
+				2705337D2EFC74290035915A /* nemotron.cpp in Sources */,
+				2705337E2EFC74290035915A /* mistral3.cpp in Sources */,
+				2705337F2EFC74290035915A /* gemma-embedding.cpp in Sources */,
+				270533802EFC74290035915A /* smollm3.cpp in Sources */,
+				270533812EFC74290035915A /* plamo.cpp in Sources */,
+				270533822EFC74290035915A /* glm4-moe.cpp in Sources */,
+				270533832EFC74290035915A /* jamba.cpp in Sources */,
+				270533842EFC74290035915A /* gemma3n-iswa.cpp in Sources */,
+				270533852EFC74290035915A /* qwen2vl.cpp in Sources */,
+				270533862EFC74290035915A /* minimax-m2.cpp in Sources */,
+				270533872EFC74290035915A /* rwkv6qwen2.cpp in Sources */,
+				270533882EFC74290035915A /* cogvlm.cpp in Sources */,
+				270533892EFC74290035915A /* qwen2.cpp in Sources */,
+				2705338A2EFC74290035915A /* unicode.cpp in Sources */,
+				2705338B2EFC74290035915A /* openelm.cpp in Sources */,
+				2705338C2EFC74290035915A /* arcee.cpp in Sources */,
+				2705338D2EFC74290035915A /* dots1.cpp in Sources */,
+				2705338E2EFC74290035915A /* apertus.cpp in Sources */,
+				2705338F2EFC74290035915A /* llama-memory.cpp in Sources */,
+				270533902EFC74290035915A /* llama-sampling.cpp in Sources */,
+				270533912EFC74290035915A /* qwen.cpp in Sources */,
+				270533922EFC74290035915A /* llama-adapter.cpp in Sources */,
+				270533932EFC74290035915A /* bailingmoe2.cpp in Sources */,
+				270533942EFC74290035915A /* llama-graph.cpp in Sources */,
+				270533952EFC74290035915A /* olmoe.cpp in Sources */,
+				270533962EFC74290035915A /* codeshell.cpp in Sources */,
+				270533972EFC74290035915A /* llama-memory-hybrid.cpp in Sources */,
+				270533982EFC74290035915A /* phi3.cpp in Sources */,
+				270533992EFC74290035915A /* llama-cparams.cpp in Sources */,
+				2705339A2EFC74290035915A /* cohere2-iswa.cpp in Sources */,
+				2705339B2EFC74290035915A /* deepseek2.cpp in Sources */,
+				2705339C2EFC74290035915A /* falcon-h1.cpp in Sources */,
+				2705339D2EFC74290035915A /* chatglm.cpp in Sources */,
+				2705339E2EFC74290035915A /* falcon.cpp in Sources */,
+				2705339F2EFC74290035915A /* phi2.cpp in Sources */,
+				270533A02EFC74290035915A /* wavtokenizer-dec.cpp in Sources */,
+				270533A12EFC74290035915A /* llama.cpp in Sources */,
+				270533A22EFC74290035915A /* gpt2.cpp in Sources */,
+				270533A32EFC74290035915A /* seed-oss.cpp in Sources */,
+				270533A42EFC74290035915A /* grok.cpp in Sources */,
+				270533A52EFC74290035915A /* llama-model-saver.cpp in Sources */,
+				270533A62EFC74290035915A /* rwkv6.cpp in Sources */,
+				270533A72EFC74290035915A /* qwen3.cpp in Sources */,
+				270533A82EFC74290035915A /* pangu-embedded.cpp in Sources */,
+				270533A92EFC74290035915A /* smallthinker.cpp in Sources */,
+				270533AA2EFC74290035915A /* gptneox.cpp in Sources */,
+				270533AB2EFC74290035915A /* refact.cpp in Sources */,
+				270533AC2EFC74290035915A /* gemma2-iswa.cpp in Sources */,
+				270533AD2EFC74290035915A /* deepseek.cpp in Sources */,
+				270533AE2EFC74290035915A /* llama-context.cpp in Sources */,
+				270533AF2EFC74290035915A /* llada.cpp in Sources */,
+				270533B02EFC74290035915A /* hunyuan-moe.cpp in Sources */,
+				270533B12EFC74290035915A /* modern-bert.cpp in Sources */,
+				270533B22EFC74290035915A /* nemotron-h.cpp in Sources */,
+				270533B32EFC74290035915A /* t5-dec.cpp in Sources */,
+				270533B42EFC74290035915A /* minicpm3.cpp in Sources */,
+				270533B52EFC74290035915A /* gemma.cpp in Sources */,
+				270533B62EFC74290035915A /* llama-arch.cpp in Sources */,
+				270533B72EFC74290035915A /* starcoder2.cpp in Sources */,
+				270533B82EFC74290035915A /* jais.cpp in Sources */,
+				270533B92EFC74290035915A /* llama-impl.cpp in Sources */,
+				270533BA2EFC74290035915A /* chameleon.cpp in Sources */,
+				270533BB2EFC74290035915A /* llama-batch.cpp in Sources */,
+				270533BC2EFC74290035915A /* olmo2.cpp in Sources */,
+				270533BD2EFC74290035915A /* llama-iswa.cpp in Sources */,
+				270533BE2EFC74290035915A /* rwkv7-base.cpp in Sources */,
+				270533BF2EFC74290035915A /* plm.cpp in Sources */,
+				270533C02EFC74290035915A /* rwkv6-base.cpp in Sources */,
+				270533C12EFC74290035915A /* qwen3vl.cpp in Sources */,
+				270533C22EFC74290035915A /* ernie4-5.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +780,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -242,6 +838,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -272,6 +869,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h\n";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,6 +902,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h\nThothAI/ThothAI-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
