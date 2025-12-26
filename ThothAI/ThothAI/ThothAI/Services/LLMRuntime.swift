@@ -4,7 +4,12 @@
 //
 //  Created by Mike on 12/23/25.
 //
+//  NOTE: This file is temporarily commented out because it references
+//  types (ModelManager, ModelMetadata) and functions that don't exist yet.
+//  The minimal inference test uses thothai_generate_test() instead.
+//  Uncomment and implement when ModelManager and ModelMetadata are available.
 
+/*
 import Foundation
 
 /// Runtime for LLM inference operations
@@ -214,4 +219,4 @@ enum LLMRuntimeError: LocalizedError {
         }
     }
 }
-
+*/

@@ -20,6 +20,17 @@ extern "C" {
 /// @return true if the smoke test succeeds (model loads, decode works, logits retrieved), false otherwise
 bool llama_smoke_test(void);
 
+/// Generate text from a prompt (minimal test function)
+/// @param prompt The input prompt text
+/// @return Heap-allocated C string with generated text, or error message. Caller must free with free().
+///         Returns NULL on critical errors.
+const char * thothai_generate_test(const char * prompt);
+
+/// Generate text from a dynamic prompt (raw completion mode)
+/// @param prompt_utf8 UTF-8 encoded prompt string from Swift
+/// @return true on success, false on failure
+bool llama_generate_from_prompt(const char * prompt_utf8);
+
 #ifdef __cplusplus
 }
 #endif

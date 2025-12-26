@@ -588,132 +588,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270533452EFC74290035915A /* dbrx.cpp in Sources */,
-				270533462EFC74290035915A /* llama-kv-cache-iswa.cpp in Sources */,
-				270533472EFC74290035915A /* olmo.cpp in Sources */,
-				270533482EFC74290035915A /* openai-moe-iswa.cpp in Sources */,
-				270533492EFC74290035915A /* t5-enc.cpp in Sources */,
-				2705334A2EFC74290035915A /* neo-bert.cpp in Sources */,
-				2705334B2EFC74290035915A /* xverse.cpp in Sources */,
-				2705334C2EFC74290035915A /* starcoder.cpp in Sources */,
-				2705334D2EFC74290035915A /* llama-io.cpp in Sources */,
-				2705334E2EFC74290035915A /* stablelm.cpp in Sources */,
-				2705334F2EFC74290035915A /* llama-quant.cpp in Sources */,
-				270533502EFC74290035915A /* graph-context-mamba.cpp in Sources */,
-				270533512EFC74290035915A /* afmoe.cpp in Sources */,
-				270533522EFC74290035915A /* glm4.cpp in Sources */,
-				270533532EFC74290035915A /* granite.cpp in Sources */,
-				270533542EFC74290035915A /* rwkv7.cpp in Sources */,
-				270533552EFC74290035915A /* arctic.cpp in Sources */,
-				270533562EFC74290035915A /* qwen2moe.cpp in Sources */,
-				270533572EFC74290035915A /* qwen3next.cpp in Sources */,
-				270533582EFC74290035915A /* bloom.cpp in Sources */,
-				270533592EFC74290035915A /* bitnet.cpp in Sources */,
-				2705335A2EFC74290035915A /* grovemoe.cpp in Sources */,
-				2705335B2EFC74290035915A /* llama-model.cpp in Sources */,
-				2705335C2EFC74290035915A /* dream.cpp in Sources */,
-				2705335D2EFC74290035915A /* bailingmoe.cpp in Sources */,
-				2705335E2EFC74290035915A /* llama-hparams.cpp in Sources */,
-				2705335F2EFC74290035915A /* qwen3moe.cpp in Sources */,
-				270533602EFC74290035915A /* plamo2.cpp in Sources */,
-				270533612EFC74290035915A /* mamba.cpp in Sources */,
-				270533622EFC74290035915A /* llada-moe.cpp in Sources */,
-				270533632EFC74290035915A /* hunyuan-dense.cpp in Sources */,
-				270533642EFC74290035915A /* exaone4.cpp in Sources */,
-				270533652EFC74290035915A /* bert.cpp in Sources */,
-				270533662EFC74290035915A /* orion.cpp in Sources */,
-				270533672EFC74290035915A /* arwkv7.cpp in Sources */,
-				270533682EFC74290035915A /* unicode-data.cpp in Sources */,
-				270533692EFC74290035915A /* rnd1.cpp in Sources */,
-				2705336A2EFC74290035915A /* internlm2.cpp in Sources */,
-				2705336B2EFC74290035915A /* llama-model-loader.cpp in Sources */,
-				2705336C2EFC74290035915A /* llama-grammar.cpp in Sources */,
-				2705336D2EFC74290035915A /* llama-vocab.cpp in Sources */,
-				2705336E2EFC74290035915A /* llama.cpp in Sources */,
-				2705336F2EFC74290035915A /* granite-hybrid.cpp in Sources */,
-				270533702EFC74290035915A /* deci.cpp in Sources */,
-				270533712EFC74290035915A /* llama-memory-recurrent.cpp in Sources */,
-				270533722EFC74290035915A /* llama-kv-cache.cpp in Sources */,
-				270533732EFC74290035915A /* qwen3vl-moe.cpp in Sources */,
-				270533742EFC74290035915A /* command-r.cpp in Sources */,
-				270533752EFC74290035915A /* mpt.cpp in Sources */,
-				270533762EFC74290035915A /* llama-chat.cpp in Sources */,
-				270533772EFC74290035915A /* llama-mmap.cpp in Sources */,
-				270533782EFC74290035915A /* baichuan.cpp in Sources */,
-				270533792EFC74290035915A /* gemma3.cpp in Sources */,
-				2705337A2EFC74290035915A /* lfm2.cpp in Sources */,
-				2705337B2EFC74290035915A /* exaone.cpp in Sources */,
-				2705337C2EFC74290035915A /* ernie4-5-moe.cpp in Sources */,
-				2705337D2EFC74290035915A /* nemotron.cpp in Sources */,
-				2705337E2EFC74290035915A /* mistral3.cpp in Sources */,
-				2705337F2EFC74290035915A /* gemma-embedding.cpp in Sources */,
-				270533802EFC74290035915A /* smollm3.cpp in Sources */,
-				270533812EFC74290035915A /* plamo.cpp in Sources */,
-				270533822EFC74290035915A /* glm4-moe.cpp in Sources */,
-				270533832EFC74290035915A /* jamba.cpp in Sources */,
-				270533842EFC74290035915A /* gemma3n-iswa.cpp in Sources */,
-				270533852EFC74290035915A /* qwen2vl.cpp in Sources */,
-				270533862EFC74290035915A /* minimax-m2.cpp in Sources */,
-				270533872EFC74290035915A /* rwkv6qwen2.cpp in Sources */,
-				270533882EFC74290035915A /* cogvlm.cpp in Sources */,
-				270533892EFC74290035915A /* qwen2.cpp in Sources */,
-				2705338A2EFC74290035915A /* unicode.cpp in Sources */,
-				2705338B2EFC74290035915A /* openelm.cpp in Sources */,
-				2705338C2EFC74290035915A /* arcee.cpp in Sources */,
-				2705338D2EFC74290035915A /* dots1.cpp in Sources */,
-				2705338E2EFC74290035915A /* apertus.cpp in Sources */,
-				2705338F2EFC74290035915A /* llama-memory.cpp in Sources */,
-				270533902EFC74290035915A /* llama-sampling.cpp in Sources */,
-				270533912EFC74290035915A /* qwen.cpp in Sources */,
-				270533922EFC74290035915A /* llama-adapter.cpp in Sources */,
-				270533932EFC74290035915A /* bailingmoe2.cpp in Sources */,
-				270533942EFC74290035915A /* llama-graph.cpp in Sources */,
-				270533952EFC74290035915A /* olmoe.cpp in Sources */,
-				270533962EFC74290035915A /* codeshell.cpp in Sources */,
-				270533972EFC74290035915A /* llama-memory-hybrid.cpp in Sources */,
-				270533982EFC74290035915A /* phi3.cpp in Sources */,
-				270533992EFC74290035915A /* llama-cparams.cpp in Sources */,
-				2705339A2EFC74290035915A /* cohere2-iswa.cpp in Sources */,
-				2705339B2EFC74290035915A /* deepseek2.cpp in Sources */,
-				2705339C2EFC74290035915A /* falcon-h1.cpp in Sources */,
-				2705339D2EFC74290035915A /* chatglm.cpp in Sources */,
-				2705339E2EFC74290035915A /* falcon.cpp in Sources */,
-				2705339F2EFC74290035915A /* phi2.cpp in Sources */,
-				270533A02EFC74290035915A /* wavtokenizer-dec.cpp in Sources */,
-				270533A12EFC74290035915A /* llama.cpp in Sources */,
-				270533A22EFC74290035915A /* gpt2.cpp in Sources */,
-				270533A32EFC74290035915A /* seed-oss.cpp in Sources */,
-				270533A42EFC74290035915A /* grok.cpp in Sources */,
-				270533A52EFC74290035915A /* llama-model-saver.cpp in Sources */,
-				270533A62EFC74290035915A /* rwkv6.cpp in Sources */,
-				270533A72EFC74290035915A /* qwen3.cpp in Sources */,
-				270533A82EFC74290035915A /* pangu-embedded.cpp in Sources */,
-				270533A92EFC74290035915A /* smallthinker.cpp in Sources */,
-				270533AA2EFC74290035915A /* gptneox.cpp in Sources */,
-				270533AB2EFC74290035915A /* refact.cpp in Sources */,
-				270533AC2EFC74290035915A /* gemma2-iswa.cpp in Sources */,
-				270533AD2EFC74290035915A /* deepseek.cpp in Sources */,
-				270533AE2EFC74290035915A /* llama-context.cpp in Sources */,
-				270533AF2EFC74290035915A /* llada.cpp in Sources */,
-				270533B02EFC74290035915A /* hunyuan-moe.cpp in Sources */,
-				270533B12EFC74290035915A /* modern-bert.cpp in Sources */,
-				270533B22EFC74290035915A /* nemotron-h.cpp in Sources */,
-				270533B32EFC74290035915A /* t5-dec.cpp in Sources */,
-				270533B42EFC74290035915A /* minicpm3.cpp in Sources */,
-				270533B52EFC74290035915A /* gemma.cpp in Sources */,
-				270533B62EFC74290035915A /* llama-arch.cpp in Sources */,
-				270533B72EFC74290035915A /* starcoder2.cpp in Sources */,
-				270533B82EFC74290035915A /* jais.cpp in Sources */,
-				270533B92EFC74290035915A /* llama-impl.cpp in Sources */,
-				270533BA2EFC74290035915A /* chameleon.cpp in Sources */,
-				270533BB2EFC74290035915A /* llama-batch.cpp in Sources */,
-				270533BC2EFC74290035915A /* olmo2.cpp in Sources */,
-				270533BD2EFC74290035915A /* llama-iswa.cpp in Sources */,
-				270533BE2EFC74290035915A /* rwkv7-base.cpp in Sources */,
-				270533BF2EFC74290035915A /* plm.cpp in Sources */,
-				270533C02EFC74290035915A /* rwkv6-base.cpp in Sources */,
-				270533C12EFC74290035915A /* qwen3vl.cpp in Sources */,
-				270533C22EFC74290035915A /* ernie4-5.cpp in Sources */,
+				// Note: ThirdParty/llama files are auto-discovered via PBXFileSystemSynchronizedRootGroup
+				// Explicit file references removed to avoid duplicate symbol errors
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,7 +656,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/Utilities/ThothAI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -838,7 +714,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/Utilities/ThothAI-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -869,7 +745,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h\n";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/Utilities/ThothAI-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -902,7 +778,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/ThothAI-Bridging-Header.h\nThothAI/ThothAI-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "ThothAI/Utilities/ThothAI-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -340,6 +340,15 @@ __host__ __device__ constexpr inline void ggml_unused_vars_impl(Args&&...) noexc
 extern "C" {
 #endif
 
+    // Version and commit info (fallback definitions if not provided via preprocessor)
+    #ifndef GGML_VERSION
+    #define GGML_VERSION "0.9.4"
+    #endif
+    
+    #ifndef GGML_COMMIT
+    #define GGML_COMMIT "vendored"
+    #endif
+
     // Function type used in fatal error callbacks
     typedef void (*ggml_abort_callback_t)(const char * error_message);
 
