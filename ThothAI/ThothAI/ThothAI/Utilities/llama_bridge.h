@@ -31,6 +31,12 @@ const char * thothai_generate_test(const char * prompt);
 /// @return true on success, false on failure
 bool llama_generate_from_prompt(const char * prompt_utf8);
 
+/// Generate text with token streaming (raw completion mode)
+/// @param prompt_utf8 UTF-8 encoded prompt string from Swift
+/// @param on_token Callback function called for each generated token (UTF-8 string)
+/// @return true on success, false on failure
+bool llama_generate_stream(const char * prompt_utf8, void (*on_token)(const char *));
+
 #ifdef __cplusplus
 }
 #endif

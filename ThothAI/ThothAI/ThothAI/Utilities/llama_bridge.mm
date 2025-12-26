@@ -148,7 +148,7 @@ extern "C" bool llama_smoke_test(void) {
     llama_sampler_chain_add(smpl, llama_sampler_init_dist(LLAMA_DEFAULT_SEED));
     
     // Generation parameters
-    const int max_gen = 16;  // Maximum 16 tokens
+    const int max_gen = 128;  // Maximum 128 tokens (default generation limit)
     const int min_tokens_before_period = 3;  // Need at least 3 tokens before checking for period
     
     // Generate tokens
@@ -161,7 +161,7 @@ extern "C" bool llama_smoke_test(void) {
         // Sample token
         llama_token new_token = llama_sampler_sample(smpl, ctx, -1);
         
-        // Check for EOS
+        // Stop generation on EOS token
         if (new_token == eos_token) {
             break;
         }
@@ -334,7 +334,7 @@ extern "C" const char * thothai_generate_test(const char * prompt) {
     llama_sampler* smpl = llama_sampler_chain_init(sparams);
     llama_sampler_chain_add(smpl, llama_sampler_init_top_k(40));
     llama_sampler_chain_add(smpl, llama_sampler_init_top_p(0.9f, 1));
-    llama_sampler_chain_add(smpl, llama_sampler_init_temp(0.8f));
+    llama_sampler_chain_add(smpl, llama_sampler_init_temp(0.7f));
     llama_sampler_chain_add(smpl, llama_sampler_init_dist(LLAMA_DEFAULT_SEED));
     
     // Generation parameters
@@ -536,7 +536,7 @@ extern "C" bool llama_generate_from_prompt(const char * prompt_utf8) {
     llama_sampler_chain_add(smpl, llama_sampler_init_dist(LLAMA_DEFAULT_SEED));
     
     // Generation parameters
-    const int max_gen = 16;  // Maximum 16 tokens
+    const int max_gen = 128;  // Maximum 128 tokens (default generation limit)
     const int min_tokens_before_period = 3;  // Need at least 3 tokens before checking for period
     
     // Generate tokens
@@ -549,7 +549,7 @@ extern "C" bool llama_generate_from_prompt(const char * prompt_utf8) {
         // Sample token
         llama_token new_token = llama_sampler_sample(smpl, ctx, -1);
         
-        // Check for EOS
+        // Stop generation on EOS token
         if (new_token == eos_token) {
             break;
         }
@@ -598,6 +598,233 @@ extern "C" bool llama_generate_from_prompt(const char * prompt_utf8) {
     NSLog(@"=======================");
     
     // Cleanup
+    llama_free(ctx);
+    llama_model_free(model);
+    llama_backend_free();
+    
+    return true;
+}
+
+extern "C" bool llama_generate_stream(const char * prompt_utf8, void (*on_token)(const char *)) {
+    // Log thread context (should be background thread)
+    if ([NSThread isMainThread]) {
+        NSLog(@"llama_generate_stream: WARNING - Running on main thread!");
+    } else {
+        NSLog(@"llama_generate_stream: Running on background thread");
+    }
+    
+    // Defensive checks: null pointer and empty string
+    if (!prompt_utf8) {
+        NSLog(@"llama_generate_stream: ERROR - NULL prompt pointer");
+        return false;
+    }
+    
+    if (strlen(prompt_utf8) == 0) {
+        NSLog(@"llama_generate_stream: ERROR - Empty prompt string");
+        return false;
+    }
+    
+    if (!on_token) {
+        NSLog(@"llama_generate_stream: ERROR - NULL callback pointer");
+        return false;
+    }
+    
+    // Log generation start
+    NSLog(@"llama_generate_stream: Generation started for prompt: '%s'", prompt_utf8);
+    
+    // Get Documents directory path
+    NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString* documentsDir = [paths firstObject];
+    NSString* modelPath = [documentsDir stringByAppendingPathComponent:@"qwen2.5-0.5b-q4_k_m.gguf"];
+    
+    const char* model_path_cstr = [modelPath UTF8String];
+    
+    // Log the resolved model path
+    NSLog(@"Loading model: %s", model_path_cstr);
+    
+    // Check if model file exists
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:modelPath]) {
+        NSLog(@"ERROR: Model file not found at: %s", model_path_cstr);
+        NSLog(@"Documents directory: %@", documentsDir);
+        
+        // List all files in Documents directory for debugging
+        NSError* error = nil;
+        NSArray* files = [fileManager contentsOfDirectoryAtPath:documentsDir error:&error];
+        if (error) {
+            NSLog(@"Error listing Documents directory: %@", error);
+        } else {
+            NSLog(@"Files in Documents directory (%lu):", (unsigned long)[files count]);
+            for (NSString* file in files) {
+                NSLog(@"  - %@", file);
+            }
+        }
+        
+        NSLog(@"Please ensure qwen2.5-0.5b-q4_k_m.gguf is in the app's Documents directory");
+        return false;
+    }
+    
+    // Initialize backend
+    llama_backend_init();
+    // Register CPU backend statically (required on iOS where backends are statically linked)
+    ggml_backend_register(ggml_backend_cpu_reg());
+    
+#if TARGET_OS_SIMULATOR
+    NSLog(@"llama_generate_stream: Simulator detected — CPU-only mode");
+#endif
+    
+    // Load model
+    struct llama_model_params model_params = llama_model_default_params();
+    model_params.n_gpu_layers = 0;  // Force CPU-only execution
+    llama_model* model = llama_model_load_from_file(model_path_cstr, model_params);
+    
+    if (!model) {
+        NSLog(@"llama_generate_stream: Failed to load model");
+        llama_backend_free();
+        return false;
+    }
+    
+    // Initialize context
+    struct llama_context_params ctx_params = llama_context_default_params();
+    ctx_params.n_ctx = 512;
+    ctx_params.n_threads = 4;
+    ctx_params.n_threads_batch = 4;
+    
+    llama_context* ctx = llama_init_from_model(model, ctx_params);
+    
+    if (!ctx) {
+        NSLog(@"llama_generate_stream: Failed to create context");
+        llama_model_free(model);
+        llama_backend_free();
+        return false;
+    }
+    
+    // Raw completion: tokenize the provided prompt
+    const llama_vocab* vocab = llama_model_get_vocab(model);
+    llama_token eos_token = llama_vocab_eos(vocab);
+    
+    // Tokenize as raw string without special tokens (add_special=false for raw completion)
+    const int max_tokens = 512;
+    std::vector<llama_token> tokens(max_tokens);
+    int n_tokens = llama_tokenize(vocab, prompt_utf8, (int)strlen(prompt_utf8), tokens.data(), max_tokens, false, false);
+    
+    if (n_tokens < 0) {
+        // Buffer too small, try with actual size needed
+        n_tokens = -n_tokens;
+        tokens.resize(n_tokens);
+        n_tokens = llama_tokenize(vocab, prompt_utf8, (int)strlen(prompt_utf8), tokens.data(), n_tokens, false, false);
+    }
+    
+    if (n_tokens <= 0) {
+        NSLog(@"llama_generate_stream: Failed to tokenize prompt");
+        llama_free(ctx);
+        llama_model_free(model);
+        llama_backend_free();
+        return false;
+    }
+    
+    tokens.resize(n_tokens);
+    
+    NSLog(@"llama_generate_stream: Tokenized %d tokens (raw mode, no special tokens)", n_tokens);
+    
+    // Decode prompt tokens
+    llama_batch batch = llama_batch_init(512, 0, 1);
+    batch.n_tokens = n_tokens;
+    
+    for (int i = 0; i < n_tokens; i++) {
+        batch.token[i] = tokens[i];
+        batch.pos[i] = i;
+        batch.seq_id[i][0] = 0;
+        batch.n_seq_id[i] = 1;
+        batch.logits[i] = (i == n_tokens - 1) ? 1 : 0;  // Enable logits only for last token
+    }
+    
+    if (llama_decode(ctx, batch) != 0) {
+        NSLog(@"llama_generate_stream: Failed to decode prompt");
+        llama_batch_free(batch);
+        llama_free(ctx);
+        llama_model_free(model);
+        llama_backend_free();
+        return false;
+    }
+    
+    llama_batch_free(batch);
+    
+    // Create sampler with fixed parameters
+    auto sparams = llama_sampler_chain_default_params();
+    llama_sampler* smpl = llama_sampler_chain_init(sparams);
+    llama_sampler_chain_add(smpl, llama_sampler_init_top_k(40));
+    llama_sampler_chain_add(smpl, llama_sampler_init_top_p(0.9f, 1));
+    llama_sampler_chain_add(smpl, llama_sampler_init_temp(0.7f));
+    llama_sampler_chain_add(smpl, llama_sampler_init_dist(LLAMA_DEFAULT_SEED));
+    
+    // Generation parameters
+    const int max_gen = 128;  // Maximum 128 tokens (default generation limit)
+    const int min_tokens_before_period = 3;  // Need at least 3 tokens before checking for period
+    
+    // Generate tokens with streaming
+    std::string generated_text;  // Track text as we generate to detect periods
+    char buf[256];
+    
+    for (int i = 0; i < max_gen; i++) {
+        // Sample token
+        llama_token new_token = llama_sampler_sample(smpl, ctx, -1);
+        
+        // Stop generation on EOS token
+        if (new_token == eos_token) {
+            break;
+        }
+        
+        // Convert token to text piece immediately
+        int len = llama_token_to_piece(vocab, new_token, buf, sizeof(buf), 0, false);
+        if (len > 0 && len < (int)sizeof(buf)) {
+            buf[len] = '\0';
+            generated_text += buf;
+            
+            // Log each emitted token
+            NSLog(@"llama_generate_stream: Emitted token: '%s'", buf);
+            
+            // Call callback immediately with the token string
+            on_token(buf);
+            
+            // Check for period after at least min_tokens_before_period tokens
+            if (i >= min_tokens_before_period - 1) {
+                if (strchr(buf, '.') != nullptr) {
+                    // Found a period in the current token, stop generation
+                    break;
+                }
+            }
+        }
+        
+        // Decode the new token
+        batch = llama_batch_init(1, 0, 1);
+        batch.n_tokens = 1;
+        batch.token[0] = new_token;
+        batch.pos[0] = n_tokens + i;
+        batch.seq_id[0][0] = 0;
+        batch.n_seq_id[0] = 1;
+        batch.logits[0] = true;  // Enable logits for sampling
+        
+        if (llama_decode(ctx, batch) != 0) {
+            NSLog(@"llama_generate_stream: Failed to decode generated token");
+            llama_batch_free(batch);
+            break;
+        }
+        
+        llama_batch_free(batch);
+    }
+    
+    llama_sampler_free(smpl);
+    
+    // Print final output with specified markers (preserve existing log format)
+    NSLog(@"=== LLM TEST OUTPUT ===");
+    NSLog(@"%s", generated_text.c_str());
+    NSLog(@"=======================");
+    
+    // Log generation finish
+    NSLog(@"llama_generate_stream: Generation finished");
+    
+    // Cleanup (final cleanup behavior unchanged)
     llama_free(ctx);
     llama_model_free(model);
     llama_backend_free();
